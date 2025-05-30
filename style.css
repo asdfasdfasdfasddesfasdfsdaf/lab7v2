@@ -12,71 +12,50 @@ header {
     text-align: center;
 }
 
-h1 {
-    margin: 0;
-}
-
-#login-section {
-    background-color: #ffffff;
+#login-section, #content-section {
     padding: 20px;
     margin: 20px;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: auto;
+h2, h3 {
+    margin-top: 0;
 }
 
-label {
-    margin-top: 10px;
-}
-
-input {
+input, textarea {
     padding: 10px;
-    margin-top: 5px;
     font-size: 16px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 button {
     padding: 10px;
-    margin-top: 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-#content-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#content-section img {
+#image-gallery img {
     margin: 10px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 textarea {
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 10px;
-    width: 100%;
-    min-height: 80px;
+    height: 80px;
     resize: none;
-    border-radius: 8px;
-    border: 1px solid #ddd;
 }
