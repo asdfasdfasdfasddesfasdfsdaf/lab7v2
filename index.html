@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на тестовый сайт</h1>
+        <p>Этот сайт предназначен для тестирования автоматизации</p>
+    </header>
+
+    <section id="login-section">
+        <h2>Вход</h2>
+        <form id="login-form">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="loginButton">Войти</button>
+        </form>
+    </section>
+
+    <section id="content-section" style="display:none;">
+        <h2>Добро пожаловать, <span id="user-name"></span>!</h2>
+        <p>Нажмите на кнопку, чтобы лайкнуть пост:</p>
+        <button id="likeButton">Лайкнуть</button>
+        <br><br>
+        <h3>Изображения</h3>
+        <img src="https://via.placeholder.com/150" alt="Картинка 1">
+        <img src="https://via.placeholder.com/150" alt="Картинка 2">
+        <img src="https://via.placeholder.com/150" alt="Картинка 3">
+        <br><br>
+        <h3>Отправьте сообщение</h3>
+        <textarea id="messageInput" placeholder="Ваше сообщение"></textarea>
+        <button id="sendMessageButton">Отправить</button>
+        <br><br>
+        <h3>Отправьте отзыв</h3>
+        <textarea id="reviewText" placeholder="Ваш отзыв"></textarea>
+        <button id="submitReview">Отправить отзыв</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Тестовый сайт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
