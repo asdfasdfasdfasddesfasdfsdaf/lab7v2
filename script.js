@@ -5,9 +5,8 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    // Проверка данных (простейшая)
+    // Проверка данных
     if (username === "your_username" && password === "your_password") {
-        // Показываем контент после успешного логина
         document.getElementById("login-section").style.display = "none";
         document.getElementById("content-section").style.display = "block";
         document.getElementById("user-name").innerText = username;
@@ -17,7 +16,20 @@ document.getElementById("login-form").addEventListener("submit", function(event)
 });
 
 document.getElementById("likeButton").addEventListener("click", function() {
-    alert("Пост понравился!");
+    alert("Пост лайкнут!");
+});
+
+document.getElementById("getCurrency").addEventListener("click", function() {
+    fetch('https://api.exchangeratesapi.io/latest?base=USD')
+        .then(response => response.json())
+        .then(data => {
+            const rate = data.rates.EUR;
+            document.getElementById("currency-rate").innerText = "1 USD = " + rate + " EUR";
+        })
+        .catch(error => {
+            document.getElementById("currency-rate").innerText = "Ошибка при получении курса.";
+            console.error("Ошибка:", error);
+        });
 });
 
 document.getElementById("sendMessageButton").addEventListener("click", function() {
