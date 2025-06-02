@@ -20,6 +20,11 @@ document.getElementById("likeButton").addEventListener("click", function() {
     alert("Пост понравился!");
 });
 
+document.getElementById("getCurrencyButton").addEventListener("click", function() {
+    // Эмуляция получения курса доллара
+    document.getElementById("exchange-rate").innerText = "1 USD = 75.00 RUB"; // Пример
+});
+
 document.getElementById("sendMessageButton").addEventListener("click", function() {
     const message = document.getElementById("messageInput").value;
     alert("Сообщение отправлено: " + message);
